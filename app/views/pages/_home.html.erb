@@ -1,16 +1,10 @@
 <div class="jumbotron center">
 	<h1>Welcome to Deven's App!</h1>
-	<!--<p>Hello World!!</p>-->
-	<% if user_signed_in? %>
-		# do something
-	<% else %>	
-	<br>
+	
 	<p>
 		<%= link_to "Log In", new_user_session_path, class: "btn btn-default btn-lg" %>
 		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-		<!--<%= link_to "Log Out", destroy_user_session_path, class: "btn btn-primary btn-lg" %>-->
 	</p>
-	<% end %>	
 </div>
 
 <!-- moved to layouts - application.html file <%= link_to "About", about_path %> -->
